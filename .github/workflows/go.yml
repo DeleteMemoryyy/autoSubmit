@@ -29,5 +29,5 @@ jobs:
       run: go build
 
     - name: Run
-      run: ./autosubmit -name ${{secrets.IAAA_LOGIN_NAME}} -password ${{secrets.IAAA_LOGIN_PASSWORD}} -reason '取快递' -trace '南门'
-          ./autosubmit -name ${{secrets.IAAA_ZW_LOGIN_NAME}} -password ${{secrets.IAAA_ZW_LOGIN_PASSWORD}} -reason '取快递' -trace '南门-南门'
+      run: ./autosubmit -username ${{secrets.IAAA_LOGIN_NAME}} -password ${{secrets.IAAA_LOGIN_PASSWORD}} -reason '取快递' -trace '南门'
+          ./autosubmit -username ${{secrets.IAAA_ZW_LOGIN_NAME}} -password ${{secrets.IAAA_ZW_LOGIN_PASSWORD}} -reason '取快递' -trace '南门-南门'
