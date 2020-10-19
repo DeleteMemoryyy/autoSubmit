@@ -64,7 +64,7 @@ Usage of ./autosubmit:
 ./autosubmit -username=1900012345 -password=dashabi -reason "玩" -track "康博斯-CBD-公主楼"
 ```
 
-注意环境变量只能传
+注意：环境变量只能传学号和密码。
 
 如果成功，会显示如下log：
 ```shell script
