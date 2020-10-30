@@ -75,11 +75,3 @@ simso登录成功
 ```
 两个`提交成功`分别为出校和入校备案成功，如果日志不同则可能失败，请在issue中反馈；后续也可能会添加debug信息和错误处理
 
-## TODO
-
-热烈欢迎pr！！
-
-
-- [ ] error handling
-- [ ] code structure refactor
-- [ ] unit test
