@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
+    - cron: '32 23 * * THU'
+    - cron: '14 7 * * THU'
     - cron: '32 23 * * SAT'
     - cron: '14 7 * * SAT'
     - cron: '32 23 * * SUN'
