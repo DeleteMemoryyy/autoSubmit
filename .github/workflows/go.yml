@@ -32,4 +32,4 @@ jobs:
       run: ./autosubmit -username ${{secrets.IAAA_LOGIN_NAME}} -password ${{secrets.IAAA_LOGIN_PASSWORD}} -reason '取快递' -track '南门'
 
     - name: Run2
-      run: ./autosubmit -username ${{secrets.IAAA_ZW_LOGIN_NAME}} -password ${{secrets.IAAA_ZW_LOGIN_PASSWORD}} -reason '取快递' -track '南门-南门'
+      run: ./autosubmit -username ${{secrets.IAAA_ZW_LOGIN_NAME}} -password ${{secrets.IAAA_ZW_LOGIN_PASSWORD}} -reason '实习' -track '南门-理想国际大厦-南门'
