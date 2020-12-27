@@ -1,0 +1,35 @@
+name: Go
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: '32 23 * * SAT-SUN'
+    - cron: '14 7 * * SAT-SUN'
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Set up Go 1.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: ^1.15
+      id: go
+
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: go build
+
+    - name: Run1
+      run: ./autosubmit -username ${{secrets.IAAA_LOGIN_NAME}} -password ${{secrets.IAAA_LOGIN_PASSWORD}} -reason '取快递' -track '南门'
+
+    - name: Run2
+      run: ./autosubmit -username ${{secrets.IAAA_ZW_LOGIN_NAME}} -password ${{secrets.IAAA_ZW_LOGIN_PASSWORD}} -reason '取快递' -track '南门-南门'
