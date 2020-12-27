@@ -1,13 +1,9 @@
 name: Go
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   schedule:
-    - cron: '32 23 * * *'
-    - cron: '14 7 * * *'
+    - cron: '32 23 * * MON-FRI'
+    - cron: '14 7 * * MON-FRI'
 
 jobs:
 
