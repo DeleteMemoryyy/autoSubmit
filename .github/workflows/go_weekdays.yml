@@ -2,9 +2,10 @@ name: Go_weekdays
 
 on:
   schedule:
-    - cron: '32 23 * * MON-FRI'
-    - cron: '14 7 * * MON-FRI'
-
+    - cron: '32 23 * * MON-WED'
+    - cron: '14 7 * * MON-WED'
+    - cron: '32 23 * * FRI'
+    - cron: '14 7 * * FRI'
 jobs:
 
   build:
