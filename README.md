@@ -1,5 +1,5 @@
 # autoSubmit
-![Go](https://github.com/yzs981130/autoSubmit/workflows/Go/badge.svg?branch=master)
+[![Go_weekdays](https://github.com/DeleteMemoryyy/autoSubmit/actions/workflows/go_weekdays.yml/badge.svg)](https://github.com/DeleteMemoryyy/autoSubmit/actions/workflows/go_weekdays.yml) [![Go_weekends](https://github.com/DeleteMemoryyy/autoSubmit/actions/workflows/go_weekends.yml/badge.svg)](https://github.com/DeleteMemoryyy/autoSubmit/actions/workflows/go_weekends.yml)
 
 本项目通过读取环境变量中的学号和密码，依次执行:
 - 登录portal获取`portalToken`
